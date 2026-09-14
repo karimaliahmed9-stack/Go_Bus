@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Validate Register With The Same Email.","9780","TC_001","Default Suite","2026-09-14","passed","2026-09-14","Tests.HomeTest","GoBus_Automation","Tests.HomeTest","TC_001"
-"Validate Register With The Same Phone Number.","9668","TC_003","Default Suite","2026-09-14","passed","2026-09-14","Tests.HomeTest","GoBus_Automation","Tests.HomeTest","TC_003"
-"Validate Register With The Same Full Name.","10697","TC_002","Default Suite","2026-09-14","passed","2026-09-14","Tests.HomeTest","GoBus_Automation","Tests.HomeTest","TC_002"
+"Validate Register With The Same Phone Number.","7005","Register_TC_003","Default Suite","2026-09-14","passed","2026-09-14","Tests.RegisterTest","GoBus_Automation","Tests.RegisterTest","Register_TC_003"
+"Validate Register With The Same Full Name.","7368","Register_TC_002","Default Suite","2026-09-14","passed","2026-09-14","Tests.RegisterTest","GoBus_Automation","Tests.RegisterTest","Register_TC_002"
+"Validate Register With The Same Email.","9189","Register_TC_001","Default Suite","2026-09-14","passed","2026-09-14","Tests.RegisterTest","GoBus_Automation","Tests.RegisterTest","Register_TC_001"
