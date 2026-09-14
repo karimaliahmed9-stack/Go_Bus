@@ -4,6 +4,7 @@ import Core.DataReaderManager.JsonReader;
 import Core.DriverManager.DriverReader;
 import Core.DriverManager.GUIDriver;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
 
 public class BaseTest implements DriverReader {
     protected GUIDriver driver;
@@ -15,10 +16,7 @@ public class BaseTest implements DriverReader {
 
 
 
-    public void BeforeClass()
-    {
-        jsonReader = new JsonReader("DataForTestCore_TAF");
-    }
+
 
 
 

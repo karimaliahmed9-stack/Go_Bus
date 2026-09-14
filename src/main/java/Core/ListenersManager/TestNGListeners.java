@@ -20,8 +20,9 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
 
 
     public void onExecutionStart() {
-        LogManager.Info("Test Execution Started");
+
         CleaningTestOutputDirectory();
+        LogManager.Info("Test Execution Started");
         LogManager.Info("Cleaning directors: ");
         CreatingDirectory();
         LogManager.Info("Creating directors: ...");

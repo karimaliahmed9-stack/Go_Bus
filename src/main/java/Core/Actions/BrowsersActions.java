@@ -15,49 +15,30 @@ public class BrowsersActions {
 
     //Navigation
     public void Navigation(String url) {
-        waitManager.getFluentWait().until(driver1 -> {
-            try {
-                driver1.navigate().to(url);
-                LogManager.Info("Navigating to: " + url);
-                return true;
-            } catch (Exception e) {
-                LogManager.Error("Navigation is False" + e);
-                return false;
-            }
-        });
-
+        driver.get(url);
     }
 
     //Get Url
     public String GetUrl() {
-        waitManager.getFluentWait().until(driver1 -> {
-            try {
-                String url = driver1.getCurrentUrl();
-                LogManager.Info("Getting Current URL: " + url);
-                return true;
-            } catch (Exception e) {
-                LogManager.Error("Getting URL is False" + e);
-                return false;
-            }
+        return waitManager.getFluentWait().until(driver1 -> {
+            String url = driver1.getCurrentUrl();
+            LogManager.Info("Getting Current URL: " + url);
+            return url;
         });
-        LogManager.Info("Getting Current URL: " + driver.getCurrentUrl());
-        return driver.getCurrentUrl();
+
+
     }
 
     //Get Title
     public String GetTitle() {
-        waitManager.getFluentWait().until(driver1 -> {
-            try {
-                String title = driver1.getTitle();
-                LogManager.Info("Getting Current Title: " + title);
-                return true;
-            } catch (Exception e) {
-                LogManager.Error("Getting Title is False" + e);
-                return false;
-            }
+        return waitManager.getFluentWait().until(driver1 -> {
+
+            String title = driver1.getTitle();
+            LogManager.Info("Getting Current Title: " + title);
+            return title;
+
         });
-        LogManager.Info("Getting Current Title: " + driver.getTitle());
-        return driver.getTitle();
+
     }
 
     //Get Window Handel
