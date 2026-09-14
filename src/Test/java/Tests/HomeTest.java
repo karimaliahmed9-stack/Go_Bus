@@ -1,10 +1,11 @@
 package Tests;
 
 import ConfigureTest.BaseTest;
+import Core.Pages.HomePage;
 import Core.Utilti.DataReaderManager.JsonReader;
 import Core.Utilti.DriverManager.GUIDriver;
-import Core.Pages.HomePage;
 import Core.Utilti.TimeManager.TimeManager;
+import io.qameta.allure.Description;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -15,6 +16,7 @@ public class HomeTest extends BaseTest {
     //Tests
 
     @Test
+    @Description("Validate Register With The Same Email.")
     public void TC_001() {
         new HomePage(driver)
                 .NavigateToUrl()
@@ -22,17 +24,54 @@ public class HomeTest extends BaseTest {
                 .ClickLoginandRegisterButton()
                 .ValidateLableAPPEAR()
                 .ClickRegisterButton()
-                .EnterFullName(jsonReader.getJsonData("fullname") + TimeManager.GetSimpleTimeForData())
-                .EnterPhoneNumber(jsonReader.getJsonData("phone") +TimeManager.GetSimpleTimeForData())
-                .EnterEmail(jsonReader.getJsonData("البريدالإلكتروني")+TimeManager.GetSimpleTimeForData())
-                .EnterPassword(jsonReader.getJsonData("كلمةالمرور"))
-                .EnterConfirmPassword(jsonReader.getJsonData("تأكيدكلمةالمرور")+TimeManager.GetSimpleTimeForData())
+                .EnterFullName(jsonReader.getJsonData("Tc_001.fullname") + TimeManager.GetSimpleTimeForData())
+                .EnterPhoneNumber(jsonReader.getJsonData("Tc_001.phone"))
+                .EnterEmail(jsonReader.getJsonData("Tc_001.Email") + TimeManager.GetSimpleTimeForData())
+                .EnterPassword(jsonReader.getJsonData("Tc_001.Pass"))
+                .EnterConfirmPassword(jsonReader.getJsonData("Tc_001.ConfirmPass"))
                 .ClickRegisterSubmitButton()
-                .ValidateRegisterSuccessMessageIsDisplayed();
+                .ValidateRegisterErrorMessageIsDisplayed();
+
     }
 
 
+    @Test
+    @Description("Validate Register With The Same Full Name.")
+    public void TC_002() {
+        new HomePage(driver)
+                .NavigateToUrl()
+                .ValidateBookingLableIsDisplayed()
+                .ClickLoginandRegisterButton()
+                .ValidateLableAPPEAR()
+                .ClickRegisterButton()
+                .EnterFullName(jsonReader.getJsonData("Tc_002.fullname"))
+                .EnterPhoneNumber(jsonReader.getJsonData("Tc_002.phone"))
+                .EnterEmail(jsonReader.getJsonData("Tc_002.Email") + TimeManager.GetSimpleTimeForData()) //change email every run to pass tc
+                .EnterPassword(jsonReader.getJsonData("Tc_002.Pass"))
+                .EnterConfirmPassword(jsonReader.getJsonData("Tc_002.ConfirmPass"))
+                .ClickRegisterSubmitButton()
+                .ValidateRegisterErrorMessageIsDisplayed();
 
+    }
+
+    @Test
+    @Description("Validate Register With The Same Phone Number.")
+    public void TC_003() {
+        new HomePage(driver)
+                .NavigateToUrl()
+                .ValidateBookingLableIsDisplayed()
+                .ClickLoginandRegisterButton()
+                .ValidateLableAPPEAR()
+                .ClickRegisterButton()
+                .EnterFullName(jsonReader.getJsonData("Tc_003.fullname"))
+                .EnterPhoneNumber(jsonReader.getJsonData("Tc_003.phone"))
+                .EnterEmail(jsonReader.getJsonData("Tc_003.Email")) //change email every run to pass tc
+                .EnterPassword(jsonReader.getJsonData("Tc_003.Pass"))
+                .EnterConfirmPassword(jsonReader.getJsonData("Tc_003.ConfirmPass"))
+                .ClickRegisterSubmitButton()
+                .ValidateRegisterErrorMessageIsDisplayed();
+
+    }
 
 
     //Configurations
@@ -46,9 +85,9 @@ public class HomeTest extends BaseTest {
     public void TearDown() {
         driver.quitDriver();
     }
+
     @BeforeClass
-    public void BeforeClass()
-    {
+    public void BeforeClass() {
         jsonReader = new JsonReader("gobus");
     }
 }

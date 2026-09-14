@@ -1,60 +1,131 @@
-[DEBUG] - [14-32-2026 16:32:29] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\MR\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml"
-[INFO] - [14-32-2026 16:32:29] [main] [Core.FileUtilsManager.FileUtil] - Directory cleaned successfully: D:\GoBus_Automation\Test-Output\Report
-[INFO] - [14-32-2026 16:32:29] [main] [Core.FileUtilsManager.FileUtil] - Directory cleaned successfully: D:\GoBus_Automation\Test-Output\Full_Report
-[INFO] - [14-32-2026 16:32:29] [main] [Core.FileUtilsManager.FileUtil] - Directory cleaned successfully: D:\GoBus_Automation\Test-Output\ScreenShoots
-[INFO] - [14-32-2026 16:32:29] [main] [Core.FileUtilsManager.FileUtil] - Directory cleaned successfully: D:\GoBus_Automation\Test-Output\ScreenRecords
-[ERROR] - [14-32-2026 16:32:29] [main] [Core.FileUtilsManager.FileUtil] - Failed to clean directory :Cannot delete file: Test-Output\Logs
-[INFO] - [14-32-2026 16:32:29] [main] [Core.ListenersManager.TestNGListeners] - Test Execution Started
-[INFO] - [14-32-2026 16:32:29] [main] [Core.ListenersManager.TestNGListeners] - Cleaning directors: 
-[INFO] - [14-32-2026 16:32:29] [main] [Core.ListenersManager.TestNGListeners] - Creating directors: ...
-[INFO] - [14-32-2026 16:32:29] [main] [Core.ListenersManager.TestNGListeners] - Properties loaded
-[INFO] - [14-32-2026 16:32:29] [main] [Core.AllureReports.AllureEnviromentManager] - Allure environment variable set .
-[INFO] - [14-32-2026 16:32:31] [main] [Core.AllureReports.AllureBinaryManager] - allure binaries already exists.
-[INFO] - [14-32-2026 16:32:31] [main] [Core.ListenersManager.TestNGListeners] - Allure Environment Set
-[INFO] - [14-32-2026 16:32:31] [main] [org.testng.internal.Utils] - [TestNG] Running:
+[DEBUG] - [14-54-2026 17:54:47] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\MR\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml"
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.FileUtilsManager.FileUtil] - Directory cleaned successfully: D:\GoBus_Automation\Test-Output\Report
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.FileUtilsManager.FileUtil] - Directory cleaned successfully: D:\GoBus_Automation\Test-Output\Full_Report
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.FileUtilsManager.FileUtil] - Directory cleaned successfully: D:\GoBus_Automation\Test-Output\ScreenShoots
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.FileUtilsManager.FileUtil] - Directory cleaned successfully: D:\GoBus_Automation\Test-Output\ScreenRecords
+[ERROR] - [14-54-2026 17:54:47] [main] [Core.Utilti.FileUtilsManager.FileUtil] - Failed to clean directory :Cannot delete file: Test-Output\Logs
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Test Execution Started
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Cleaning directors: 
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Creating directors: ...
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Properties loaded
+[INFO] - [14-54-2026 17:54:47] [main] [Core.Utilti.AllureReports.AllureEnviromentManager] - Allure environment variable set .
+[INFO] - [14-54-2026 17:54:49] [main] [Core.Utilti.AllureReports.AllureBinaryManager] - allure binaries already exists.
+[INFO] - [14-54-2026 17:54:49] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Allure Environment Set
+[INFO] - [14-54-2026 17:54:50] [main] [org.testng.internal.Utils] - [TestNG] Running:
   C:\Users\MR\AppData\Local\JetBrains\IdeaIC2024.3\temp-testng-customsuite.xml
 
-[INFO] - [14-32-2026 16:32:31] [main] [Core.DriverManager.GUIDriver] - Browser Type is :Chrome
-[INFO] - [14-32-2026 16:32:32] [main] [Core.ListenersManager.TestNGListeners] - Starting Test Case : TC_001Started
-[INFO] - [14-32-2026 16:32:35] [main] [Core.Pages.HomePage] - Booking Lable is displayed
-[INFO] - [14-32-2026 16:32:36] [main] [Core.Actions.ElementActions] - Scrolling to element: By.partialLinkText: تسجيل الدخول
-[INFO] - [14-32-2026 16:32:36] [main] [Core.Actions.ElementActions] - Scrolling to elementBy.partialLinkText: تسجيل الدخول
-[INFO] - [14-32-2026 16:32:36] [main] [Core.Actions.ElementActions] - Clicking on element: By.partialLinkText: تسجيل الدخول
-[INFO] - [14-32-2026 16:32:36] [main] [Core.Pages.LoginPage] - Lable login is displayed
-[INFO] - [14-32-2026 16:32:36] [main] [Core.Actions.ElementActions] - Scrolling to element: By.cssSelector: [href="/signup"]
-[INFO] - [14-32-2026 16:32:36] [main] [Core.Actions.ElementActions] - Scrolling to elementBy.cssSelector: [href="/signup"]
-[INFO] - [14-32-2026 16:32:36] [main] [Core.Actions.ElementActions] - Clicking on element: By.cssSelector: [href="/signup"]
-[DEBUG] - [14-32-2026 16:32:36] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['fullname']
-[ERROR] - [14-32-2026 16:32:36] [main] [Core.DataReaderManager.JsonReader] - Error retrieving JSON data for path: fullnameNo results for path: $['fullname']
-[ERROR] - [14-32-2026 16:32:36] [main] [Core.Actions.ElementActions] - Sending key is Falseorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[name="userName"]"}
+[INFO] - [14-54-2026 17:54:50] [main] [Core.Utilti.DriverManager.GUIDriver] - Browser Type is :Chrome
+[INFO] - [14-54-2026 17:54:54] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Starting Test Case : TC_001Started
+[INFO] - [14-54-2026 17:54:58] [main] [Core.Pages.HomePage] - Booking Lable is displayed
+[INFO] - [14-54-2026 17:54:58] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.partialLinkText: تسجيل الدخول
+[INFO] - [14-54-2026 17:54:58] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.partialLinkText: تسجيل الدخول
+[INFO] - [14-54-2026 17:54:58] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.partialLinkText: تسجيل الدخول
+[INFO] - [14-54-2026 17:54:59] [main] [Core.Pages.LoginPage] - Lable login is displayed
+[INFO] - [14-54-2026 17:54:59] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [href="/signup"]
+[INFO] - [14-54-2026 17:54:59] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.cssSelector: [href="/signup"]
+[INFO] - [14-54-2026 17:54:59] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.cssSelector: [href="/signup"]
+[DEBUG] - [14-54-2026 17:54:59] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_001']['fullname']
+[ERROR] - [14-54-2026 17:54:59] [main] [Core.Utilti.DataReaderManager.JsonReader] - Error retrieving JSON data for path: Tc_001.fullnameNo results for path: $['Tc_001']['fullname']
+[INFO] - [14-55-2026 17:55:00] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [name="userName"]
+[INFO] - [14-55-2026 17:55:00] [main] [Core.Utilti.Actions.ElementActions] - Sending key: 1789397699883 to element: By.cssSelector: [name="userName"]
+[DEBUG] - [14-55-2026 17:55:00] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_001']['phone']
+[INFO] - [14-55-2026 17:55:01] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [type="tel"]
+[INFO] - [14-55-2026 17:55:01] [main] [Core.Utilti.Actions.ElementActions] - Sending key: +201111111111 to element: By.cssSelector: [type="tel"]
+[DEBUG] - [14-55-2026 17:55:01] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_001']['Email']
+[INFO] - [14-55-2026 17:55:01] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: userEmail
+[INFO] - [14-55-2026 17:55:01] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester@gmail.com1789397701281 to element: By.name: userEmail
+[DEBUG] - [14-55-2026 17:55:01] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_001']['Pass']
+[INFO] - [14-55-2026 17:55:01] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: userPassword
+[INFO] - [14-55-2026 17:55:02] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester@123 to element: By.name: userPassword
+[DEBUG] - [14-55-2026 17:55:02] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_001']['ConfirmPass']
+[INFO] - [14-55-2026 17:55:02] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: confirmPassword
+[INFO] - [14-55-2026 17:55:02] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester@123 to element: By.name: confirmPassword
+[INFO] - [14-55-2026 17:55:02] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:02] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:02] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:04] [main] [Core.Pages.RegisterPage] - Register Error Message is displayed
+[INFO] - [14-55-2026 17:55:04] [main] [Core.Utilti.AttachementsManager.ScreenShootsManager] - Capture screenshot succeeded
+[INFO] - [14-55-2026 17:55:04] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Test Case Passed: TC_001Passed
+[INFO] - [14-55-2026 17:55:06] [main] [Core.Utilti.DriverManager.GUIDriver] - Browser Type is :Chrome
+[INFO] - [14-55-2026 17:55:08] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Starting Test Case : TC_002Started
+[INFO] - [14-55-2026 17:55:12] [main] [Core.Pages.HomePage] - Booking Lable is displayed
+[INFO] - [14-55-2026 17:55:12] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.partialLinkText: تسجيل الدخول
+[INFO] - [14-55-2026 17:55:12] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.partialLinkText: تسجيل الدخول
+[INFO] - [14-55-2026 17:55:12] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.partialLinkText: تسجيل الدخول
+[INFO] - [14-55-2026 17:55:13] [main] [Core.Pages.LoginPage] - Lable login is displayed
+[INFO] - [14-55-2026 17:55:13] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [href="/signup"]
+[INFO] - [14-55-2026 17:55:13] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.cssSelector: [href="/signup"]
+[INFO] - [14-55-2026 17:55:13] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.cssSelector: [href="/signup"]
+[DEBUG] - [14-55-2026 17:55:13] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_002']['fullname']
+[ERROR] - [14-55-2026 17:55:13] [main] [Core.Utilti.Actions.ElementActions] - Sending key is Falseorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[name="userName"]"}
   (Session info: chrome=152.0.7977.83)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e14a65e2f6a131a2b04925edae19fbfb, findElement {value=[name="userName"], using=css selector}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\MR\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52839}, goog:processID: 9812, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52839/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e14a65e2f6a131a2b04925edae19fbfb
-[INFO] - [14-32-2026 16:32:37] [main] [Core.Actions.ElementActions] - Scrolling to element: By.cssSelector: [name="userName"]
-[INFO] - [14-32-2026 16:32:37] [main] [Core.Actions.ElementActions] - Sending key: 1789392756858 to element: By.cssSelector: [name="userName"]
-[DEBUG] - [14-32-2026 16:32:37] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['phone']
-[ERROR] - [14-32-2026 16:32:37] [main] [Core.DataReaderManager.JsonReader] - Error retrieving JSON data for path: phoneNo results for path: $['phone']
-[INFO] - [14-32-2026 16:32:37] [main] [Core.Actions.ElementActions] - Scrolling to element: By.cssSelector: [type="tel"]
-[INFO] - [14-32-2026 16:32:37] [main] [Core.Actions.ElementActions] - Sending key: 1789392757611 to element: By.cssSelector: [type="tel"]
-[DEBUG] - [14-32-2026 16:32:37] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['البريدالإلكتروني']
-[INFO] - [14-32-2026 16:32:37] [main] [Core.Actions.ElementActions] - Scrolling to element: By.name: userEmail
-[INFO] - [14-32-2026 16:32:38] [main] [Core.Actions.ElementActions] - Sending key: k@gmail.com1789392757859 to element: By.name: userEmail
-[DEBUG] - [14-32-2026 16:32:38] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['كلمةالمرور']
-[INFO] - [14-32-2026 16:32:38] [main] [Core.Actions.ElementActions] - Scrolling to element: By.name: userPassword
-[INFO] - [14-32-2026 16:32:38] [main] [Core.Actions.ElementActions] - Sending key: Savage@123 to element: By.name: userPassword
-[DEBUG] - [14-32-2026 16:32:38] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['تأكيدكلمةالمرور']
-[INFO] - [14-32-2026 16:32:38] [main] [Core.Actions.ElementActions] - Scrolling to element: By.name: confirmPassword
-[INFO] - [14-32-2026 16:32:38] [main] [Core.Actions.ElementActions] - Sending key: Savage@1231789392758280 to element: By.name: confirmPassword
-[INFO] - [14-32-2026 16:32:38] [main] [Core.Actions.ElementActions] - Scrolling to element: By.cssSelector: [type="submit"]
-[INFO] - [14-32-2026 16:32:38] [main] [Core.Actions.ElementActions] - Scrolling to elementBy.cssSelector: [type="submit"]
-[INFO] - [14-32-2026 16:32:38] [main] [Core.Actions.ElementActions] - Clicking on element: By.cssSelector: [type="submit"]
-[INFO] - [14-32-2026 16:32:38] [main] [Core.AttachementsManager.ScreenShootsManager] - Capture screenshot succeeded
-[INFO] - [14-32-2026 16:32:38] [main] [Core.ListenersManager.TestNGListeners] - Test Case Passed: TC_001Passed
-[INFO] - [14-32-2026 16:32:39] [main] [Core.ListenersManager.TestNGListeners] - Starting Test Execution Finished: ... 
-[INFO] - [14-32-2026 16:32:43] [main] [Core.FileUtilsManager.FileUtil] - Failed To Rename File FromD:\GoBus_Automation\Test-Output\Report\index.html, already has the desired name D:\GoBus_Automation\Test-Output\Report\AllureReport_2026-09-14_16-32-43.html.
-[INFO] - [14-32-2026 16:32:44] [main] [Core.ListenersManager.TestNGListeners] - Test Execution Finished: ... 
+Command: [075dd9876d60e4a0379a94706f5e2202, findElement {value=[name="userName"], using=css selector}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\MR\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62416}, goog:processID: 11552, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62416/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 075dd9876d60e4a0379a94706f5e2202
+[INFO] - [14-55-2026 17:55:14] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [name="userName"]
+[INFO] - [14-55-2026 17:55:15] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester to element: By.cssSelector: [name="userName"]
+[DEBUG] - [14-55-2026 17:55:15] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_002']['phone']
+[INFO] - [14-55-2026 17:55:15] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [type="tel"]
+[INFO] - [14-55-2026 17:55:15] [main] [Core.Utilti.Actions.ElementActions] - Sending key: +201111111111 to element: By.cssSelector: [type="tel"]
+[DEBUG] - [14-55-2026 17:55:15] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_002']['Email']
+[INFO] - [14-55-2026 17:55:15] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: userEmail
+[INFO] - [14-55-2026 17:55:16] [main] [Core.Utilti.Actions.ElementActions] - Sending key: Automation@gmail.com1789397715548 to element: By.name: userEmail
+[DEBUG] - [14-55-2026 17:55:16] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_002']['Pass']
+[INFO] - [14-55-2026 17:55:16] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: userPassword
+[INFO] - [14-55-2026 17:55:16] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester@123 to element: By.name: userPassword
+[DEBUG] - [14-55-2026 17:55:16] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_002']['ConfirmPass']
+[INFO] - [14-55-2026 17:55:16] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: confirmPassword
+[INFO] - [14-55-2026 17:55:16] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester@123 to element: By.name: confirmPassword
+[INFO] - [14-55-2026 17:55:16] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:16] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:17] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:18] [main] [Core.Pages.RegisterPage] - Register Error Message is displayed
+[INFO] - [14-55-2026 17:55:18] [main] [Core.Utilti.AttachementsManager.ScreenShootsManager] - Capture screenshot succeeded
+[INFO] - [14-55-2026 17:55:19] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Test Case Passed: TC_002Passed
+[INFO] - [14-55-2026 17:55:19] [main] [Core.Utilti.DriverManager.GUIDriver] - Browser Type is :Chrome
+[INFO] - [14-55-2026 17:55:21] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Starting Test Case : TC_003Started
+[INFO] - [14-55-2026 17:55:25] [main] [Core.Pages.HomePage] - Booking Lable is displayed
+[INFO] - [14-55-2026 17:55:25] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.partialLinkText: تسجيل الدخول
+[INFO] - [14-55-2026 17:55:25] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.partialLinkText: تسجيل الدخول
+[INFO] - [14-55-2026 17:55:26] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.partialLinkText: تسجيل الدخول
+[INFO] - [14-55-2026 17:55:26] [main] [Core.Pages.LoginPage] - Lable login is displayed
+[INFO] - [14-55-2026 17:55:26] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [href="/signup"]
+[INFO] - [14-55-2026 17:55:26] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.cssSelector: [href="/signup"]
+[INFO] - [14-55-2026 17:55:26] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.cssSelector: [href="/signup"]
+[DEBUG] - [14-55-2026 17:55:26] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_003']['fullname']
+[ERROR] - [14-55-2026 17:55:26] [main] [Core.Utilti.Actions.ElementActions] - Sending key is Falseorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[name="userName"]"}
+  (Session info: chrome=152.0.7977.83)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f0a806d64b8d2b9f4eb17d5a29382df5, findElement {value=[name="userName"], using=css selector}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\MR\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58390}, goog:processID: 6260, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58390/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0a806d64b8d2b9f4eb17d5a29382df5
+[INFO] - [14-55-2026 17:55:27] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [name="userName"]
+[INFO] - [14-55-2026 17:55:27] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester to element: By.cssSelector: [name="userName"]
+[DEBUG] - [14-55-2026 17:55:27] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_003']['phone']
+[INFO] - [14-55-2026 17:55:27] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [type="tel"]
+[INFO] - [14-55-2026 17:55:28] [main] [Core.Utilti.Actions.ElementActions] - Sending key: +201111111111 to element: By.cssSelector: [type="tel"]
+[DEBUG] - [14-55-2026 17:55:28] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_003']['Email']
+[INFO] - [14-55-2026 17:55:28] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: userEmail
+[INFO] - [14-55-2026 17:55:28] [main] [Core.Utilti.Actions.ElementActions] - Sending key: Automation1@gmail.com to element: By.name: userEmail
+[DEBUG] - [14-55-2026 17:55:28] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_003']['Pass']
+[INFO] - [14-55-2026 17:55:28] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: userPassword
+[INFO] - [14-55-2026 17:55:28] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester@123 to element: By.name: userPassword
+[DEBUG] - [14-55-2026 17:55:28] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Tc_003']['ConfirmPass']
+[INFO] - [14-55-2026 17:55:29] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.name: confirmPassword
+[INFO] - [14-55-2026 17:55:29] [main] [Core.Utilti.Actions.ElementActions] - Sending key: AutomationTester@123 to element: By.name: confirmPassword
+[INFO] - [14-55-2026 17:55:29] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to element: By.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:29] [main] [Core.Utilti.Actions.ElementActions] - Scrolling to elementBy.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:29] [main] [Core.Utilti.Actions.ElementActions] - Clicking on element: By.cssSelector: [type="submit"]
+[INFO] - [14-55-2026 17:55:30] [main] [Core.Pages.RegisterPage] - Register Error Message is displayed
+[INFO] - [14-55-2026 17:55:30] [main] [Core.Utilti.AttachementsManager.ScreenShootsManager] - Capture screenshot succeeded
+[INFO] - [14-55-2026 17:55:31] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Test Case Passed: TC_003Passed
+[INFO] - [14-55-2026 17:55:31] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Starting Test Execution Finished: ... 
+[INFO] - [14-55-2026 17:55:38] [main] [Core.Utilti.FileUtilsManager.FileUtil] - Failed To Rename File FromD:\GoBus_Automation\Test-Output\Report\index.html, already has the desired name D:\GoBus_Automation\Test-Output\Report\AllureReport_2026-09-14_17-55-38.html.
+[INFO] - [14-55-2026 17:55:38] [main] [Core.Utilti.ListenersManager.TestNGListeners] - Test Execution Finished: ... 

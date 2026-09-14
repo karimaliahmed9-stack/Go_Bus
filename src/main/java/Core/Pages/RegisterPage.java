@@ -21,6 +21,7 @@ public class RegisterPage {
     private final By ConfirmPassword = By.name("confirmPassword");
     private final By RegisterSubmitButton = By.cssSelector("[type=\"submit\"]");
     private final By RegisterSuccessMessage = By.cssSelector("[class=\"text-xs text-white  px-1 rounded\"]");
+    private final By RegisterErrorMessage = By.cssSelector("[class=\"alert text-red-500\"]");
 
     //Actions
     @Step("Navigate to Register Page")
@@ -38,6 +39,7 @@ public class RegisterPage {
     @Step("Enter Phone Number: {0}")
     public RegisterPage EnterPhoneNumber(String phoneNumber)
     {
+
         driver.elementActions().SendKey(PhoneNamber,phoneNumber);
         return this;
     }
@@ -78,6 +80,13 @@ public class RegisterPage {
     {
         driver.hardAssert().isElementVisible(RegisterSuccessMessage);
         LogManager.Info("Register Success Message is displayed");
+        return this;
+    }
+    @Step("Validate the Register Error Message is displayed")
+    public RegisterPage ValidateRegisterErrorMessageIsDisplayed()
+    {
+        driver.hardAssert().isElementVisible(RegisterErrorMessage);
+        LogManager.Info("Register Error Message is displayed");
         return this;
     }
 
