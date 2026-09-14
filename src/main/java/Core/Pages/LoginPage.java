@@ -1,8 +1,8 @@
 package Core.Pages;
 
-import Core.DataReaderManager.PropertyReader;
-import Core.DriverManager.GUIDriver;
-import Core.LogManager.LogManager;
+import Core.Utilti.DataReaderManager.PropertyReader;
+import Core.Utilti.DriverManager.GUIDriver;
+import Core.Utilti.LogManager.LogManager;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 

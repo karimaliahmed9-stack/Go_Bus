@@ -1,7 +1,8 @@
 package Core.Pages;
 
-import Core.DataReaderManager.PropertyReader;
-import Core.DriverManager.GUIDriver;
+import Core.Utilti.DataReaderManager.PropertyReader;
+import Core.Utilti.DriverManager.GUIDriver;
+import Core.Utilti.LogManager.LogManager;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -19,6 +20,7 @@ public class RegisterPage {
     private final By Password = By.name("userPassword");
     private final By ConfirmPassword = By.name("confirmPassword");
     private final By RegisterSubmitButton = By.cssSelector("[type=\"submit\"]");
+    private final By RegisterSuccessMessage = By.cssSelector("[class=\"text-xs text-white  px-1 rounded\"]");
 
     //Actions
     @Step("Navigate to Register Page")
@@ -69,6 +71,13 @@ public class RegisterPage {
     {
         String currentUrl = driver.browsersActions().GetUrl();
         driver.hardAssert().assertEquals(currentUrl,expectedUrl,"Url Not Matched");
+        return this;
+    }
+    @Step("Validate the Register Success Message is displayed")
+    public RegisterPage ValidateRegisterSuccessMessageIsDisplayed()
+    {
+        driver.hardAssert().isElementVisible(RegisterSuccessMessage);
+        LogManager.Info("Register Success Message is displayed");
         return this;
     }
 

@@ -1,10 +1,7 @@
 {
-
-  "expectedUrl": "https://go-bus.com/login",
-  "expectedUrl1": "https://go-bus.com/signup",
-  "fullname ": "Karim",
-  "phone ": "1111111111",
-  "البريدالإلكتروني": "k@gmail.com",
-  "كلمةالمرور": "Savage@123",
-  "تأكيدكلمةالمرور":"Savage@123"
+  "fullname ": "AutomationTester",
+  "phone ": "1234567891",
+  "البريدالإلكتروني": "AutomationTester@gmail.com",
+  "كلمةالمرور": "AutomationTester@123",
+  "تأكيدكلمةالمرور":"AutomationTester@123"
 }

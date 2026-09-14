@@ -1,12 +1,10 @@
 package Tests;
 
 import ConfigureTest.BaseTest;
-import Core.DataReaderManager.JsonReader;
-import Core.DataReaderManager.PropertyReader;
-import Core.DriverManager.GUIDriver;
+import Core.Utilti.DataReaderManager.JsonReader;
+import Core.Utilti.DriverManager.GUIDriver;
 import Core.Pages.HomePage;
-import Core.Pages.LoginPage;
-import Core.TimeManager.TimeManager;
+import Core.Utilti.TimeManager.TimeManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -29,7 +27,8 @@ public class HomeTest extends BaseTest {
                 .EnterEmail(jsonReader.getJsonData("البريدالإلكتروني")+TimeManager.GetSimpleTimeForData())
                 .EnterPassword(jsonReader.getJsonData("كلمةالمرور"))
                 .EnterConfirmPassword(jsonReader.getJsonData("تأكيدكلمةالمرور")+TimeManager.GetSimpleTimeForData())
-                .ClickRegisterSubmitButton();
+                .ClickRegisterSubmitButton()
+                .ValidateRegisterSuccessMessageIsDisplayed();
     }
 
 

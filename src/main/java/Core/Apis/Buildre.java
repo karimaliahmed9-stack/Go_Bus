@@ -1,6 +1,6 @@
 package Core.Apis;
 
-import Core.DataReaderManager.PropertyReader;
+import Core.Utilti.DataReaderManager.PropertyReader;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;

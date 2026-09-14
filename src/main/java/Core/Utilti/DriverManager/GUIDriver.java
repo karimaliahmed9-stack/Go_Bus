@@ -1,0 +1,73 @@
+package Core.Utilti.DriverManager;
+
+import Core.Utilti.Actions.Alerts;
+import Core.Utilti.Actions.BrowsersActions;
+import Core.Utilti.Actions.ElementActions;
+import Core.Utilti.Actions.FrameActions;
+import Core.Utilti.Assertions.HardAssert;
+import Core.Utilti.Assertions.SoftAssert;
+import Core.Utilti.DataReaderManager.PropertyReader;
+import Core.Utilti.LogManager.LogManager;
+import Core.Utilti.WaitManager.WaitManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ThreadGuard;
+
+public class GUIDriver {
+    //هقرا اسم البراوزر من system property (property Reader.getProperty)
+    private final String Browser = PropertyReader.getProperty("browserType");
+    private ThreadLocal<WebDriver> ThreadLocaldriver = new ThreadLocal<>();
+
+    public GUIDriver() {
+        LogManager.Info("Browser Type is :" + Browser);
+        //هنا من كلاس الاينم هختار اي بروزر وهحولو ل uppercase
+        //كدا شغلنا المصنع
+        Browsers browserType = Browsers.valueOf(Browser.toUpperCase());
+        //هنا بقي بنده علي المصنع نفسو من الاينم بقي
+
+        AbstractDriver abstractDriver = browserType.GetDriverFactory();
+        //عشان لو استخدمتو في اكثر من thread يعرفني
+
+        WebDriver driver = ThreadGuard.protect(abstractDriver.CreatDriver());
+        ThreadLocaldriver.set(driver);
+
+    }
+
+
+    public WebDriver getDriver() {
+        return ThreadLocaldriver.get();
+    }
+
+    public void quitDriver() {
+
+        ThreadLocaldriver.get().quit();
+    }
+
+
+    public ElementActions elementActions() {
+        return new ElementActions(getDriver());
+    }
+
+    public BrowsersActions browsersActions() {
+        return new BrowsersActions(getDriver());
+    }
+
+    public Alerts alerts() {
+        return new Alerts(getDriver());
+    }
+
+    public HardAssert hardAssert() {
+        return new HardAssert(getDriver());
+    }
+
+    public SoftAssert softAssert() {
+        return new SoftAssert(getDriver());
+    }
+
+    public FrameActions frameActions() {
+        return new FrameActions(getDriver());
+    }
+
+    public WaitManager waitManager() {
+        return new WaitManager(getDriver());
+    }
+}

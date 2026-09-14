@@ -1,10 +1,9 @@
 package ConfigureTest;
 
-import Core.DataReaderManager.JsonReader;
-import Core.DriverManager.DriverReader;
-import Core.DriverManager.GUIDriver;
+import Core.Utilti.DataReaderManager.JsonReader;
+import Core.Utilti.DriverManager.DriverReader;
+import Core.Utilti.DriverManager.GUIDriver;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
 
 public class BaseTest implements DriverReader {
     protected GUIDriver driver;
