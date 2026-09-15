@@ -11,23 +11,24 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-    @Description("")
-    @Test
+//    @Description("")
+//    @Test
 
 
     //Configurations
 
-    @BeforeMethod
+    //@BeforeMethod
     public void Setup() {
         driver = new GUIDriver();
+
     }
 
-    @AfterMethod
+    //@AfterMethod
     public void TearDown() {
         driver.quitDriver();
     }
 
-    @BeforeClass
+    //@BeforeClass
     public void BeforeClass() {
         jsonReader = new JsonReader("Login");
     }

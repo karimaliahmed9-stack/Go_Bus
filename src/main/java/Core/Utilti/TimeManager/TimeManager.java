@@ -12,5 +12,12 @@ public class TimeManager {
         return System.currentTimeMillis();
     }
 
+    //For Cases --> Fields Egyptian Number
+    public static String GetUniqueEgyptianPhone() {
+        String time = String.valueOf(System.currentTimeMillis());
+
+        return "011" + time.substring(time.length() - 8);
+    }
+
 
 }

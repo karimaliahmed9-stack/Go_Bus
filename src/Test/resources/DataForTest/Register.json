@@ -1,6 +1,6 @@
 {
   "Tc_001": {
-    "fullname ": "AutomationTester",
+    "fullname": "AutomationTester",
     "phone": "+201111111111",
     "Email": "k@gmail.com",
     "Pass": "AutomationTester@123",
@@ -8,7 +8,7 @@
   },
   "Tc_002": {
     "fullname": "AutomationTester",
-    "phone": "+201111111111",
+    "phone": "+2010",
     "Email": "Automation@gmail.com",
     "Pass": "AutomationTester@123",
     "ConfirmPass": "AutomationTester@123"
@@ -20,4 +20,5 @@
     "Pass": "AutomationTester@123",
     "ConfirmPass": "AutomationTester@123"
   }
+
 }

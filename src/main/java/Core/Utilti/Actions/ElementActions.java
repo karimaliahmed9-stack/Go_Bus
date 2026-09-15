@@ -65,6 +65,24 @@ public class ElementActions {
         });
     }
 
+    //SendKey Without The Clearing Data
+    public void SendKey_Without_Data(By locator, String key) {
+        waitManager.getFluentWait().until(d -> {
+            try {
+                WebElement e = d.findElement(locator);
+                ScrollToElementJS(locator);
+                e.isDisplayed();
+                e.isEnabled();
+                e.sendKeys(key);
+                LogManager.Info("Sending key: " + key + " to element: " + locator);
+                return true;
+            } catch (Exception e) {
+                LogManager.Error("Sending key is False" + e);
+                return false;
+            }
+        });
+    }
+
 
     //GetText
     public String GetText(By locator) {
@@ -91,8 +109,6 @@ public class ElementActions {
 
         ((JavascriptExecutor) driver).executeScript("""
                 arguments[0].scrollIntoView({behaviour:"auto", block:"center", inline:"center"});""", FindElement(locator));
-        LogManager.Info("Scrolling to element: " + locator);
-
     }
 
     //Select From Drop down
@@ -191,6 +207,7 @@ public class ElementActions {
         });
     }
 
+    //Duble Clicking
     public void DubleClickElement(By locator) {
         waitManager.getFluentWait().until(driver -> {
             try {
@@ -296,6 +313,25 @@ public class ElementActions {
                 return null;
             }
         });
+    }
+
+    //For Send Phone Number
+    //String phone = TimeManager.GetUniquePhoneNumber("011", 8);
+    //011 _12345678
+
+    public  String GetUniquePhoneNumber(By Locator, String prefix, int numberOfDigits) {
+
+        String time = String.valueOf(System.currentTimeMillis());
+
+        if (numberOfDigits > time.length()) {
+            LogManager.Error("Number of digits requested exceeds the length of the current time in milliseconds."
+            );
+        }
+
+        String Phone =  prefix + time.substring(time.length() - numberOfDigits);
+        //SendKey_Without_Data(Locator,Phone);
+        SendKey(Locator,Phone);
+        return Phone;
     }
 
 

@@ -2,6 +2,8 @@ package Tests;
 
 import ConfigureTest.BaseTest;
 import Core.Pages.HomePage;
+import Core.Pages.RegisterPage;
+import Core.Utilti.Actions.ElementActions;
 import Core.Utilti.DataReaderManager.JsonReader;
 import Core.Utilti.DriverManager.GUIDriver;
 import Core.Utilti.TimeManager.TimeManager;
@@ -24,12 +26,13 @@ public class RegisterTest extends BaseTest {
                 .ClickLoginandRegisterButton()
                 .ValidateLableAPPEAR()
                 .ClickRegisterButton()
-                .EnterFullName(jsonReader.getJsonData("Tc_001.fullname") + TimeManager.GetSimpleTimeForData())
+                .EnterFullName(jsonReader.getJsonData("Tc_001.fullname") )
                 .EnterPhoneNumber(jsonReader.getJsonData("Tc_001.phone"))
                 .EnterEmail(jsonReader.getJsonData("Tc_001.Email") )
                 .EnterPassword(jsonReader.getJsonData("Tc_001.Pass"))
                 .EnterConfirmPassword(jsonReader.getJsonData("Tc_001.ConfirmPass"))
-                .ClickRegisterSubmitButton()
+                .ClickRegisterSubmitButton();
+                new RegisterPage(driver)
                 .ValidateRegisterErrorMessageIsDisplayed();
     }
 
@@ -44,13 +47,13 @@ public class RegisterTest extends BaseTest {
                 .ValidateLableAPPEAR()
                 .ClickRegisterButton()
                 .EnterFullName(jsonReader.getJsonData("Tc_002.fullname"))
-                .EnterPhoneNumber(jsonReader.getJsonData("Tc_002.phone"))
+                .EnterPhoneSpecificNumber(jsonReader.getJsonData("Tc_002.phone"),8 ) //change phone number every run to pass tc
                 .EnterEmail(jsonReader.getJsonData("Tc_002.Email") + TimeManager.GetSimpleTimeForData()) //change email every run to pass tc
                 .EnterPassword(jsonReader.getJsonData("Tc_002.Pass"))
                 .EnterConfirmPassword(jsonReader.getJsonData("Tc_002.ConfirmPass"))
-                .ClickRegisterSubmitButton()
-                .ValidateRegisterErrorMessageIsDisplayed();
-
+                .ClickRegisterSubmitButton();
+        new RegisterPage(driver)
+                .ValidateRegisterSuccessMessageIsDisplayed();
     }
 
     @Test
@@ -64,12 +67,12 @@ public class RegisterTest extends BaseTest {
                 .ClickRegisterButton()
                 .EnterFullName(jsonReader.getJsonData("Tc_003.fullname"))
                 .EnterPhoneNumber(jsonReader.getJsonData("Tc_003.phone"))
-                .EnterEmail(jsonReader.getJsonData("Tc_003.Email")) //change email every run to pass tc
+                .EnterEmail(jsonReader.getJsonData("Tc_003.Email")+ TimeManager.GetSimpleTimeForData()) //change email every run to pass tc
                 .EnterPassword(jsonReader.getJsonData("Tc_003.Pass"))
                 .EnterConfirmPassword(jsonReader.getJsonData("Tc_003.ConfirmPass"))
-                .ClickRegisterSubmitButton()
-                .ValidateRegisterErrorMessageIsDisplayed();
-
+                .ClickRegisterSubmitButton();
+        new RegisterPage(driver)
+                .ValidateErrorMessageForPhoneNumberIsDisplayed();
     }
 
 

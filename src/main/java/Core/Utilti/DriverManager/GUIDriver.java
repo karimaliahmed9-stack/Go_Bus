@@ -70,4 +70,6 @@ public class GUIDriver {
     public WaitManager waitManager() {
         return new WaitManager(getDriver());
     }
+
+
 }
