@@ -13,14 +13,14 @@ import java.io.File;
 
 public class ScreenShootsManager {
 
-    public static final String screenshoot_path = "Test-Output/ScreenShoots/";
+    public static final String ScreenShoots_PATH = "Test-Output/ScreenShoots/";
 
 
     //Take full page screen shoot
     public static void TakeFullScreenShots(WebDriver driver, String screenshootName) {
         try {
             File screenshootSrc = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            File screenshootFile = new File(screenshoot_path + screenshootName + "-" + TimeManager.GetCurrentTime() + ".png");
+            File screenshootFile = new File(ScreenShoots_PATH + screenshootName + "-" + TimeManager.GetCurrentTime() + ".png");
             FileUtils.copyFile(screenshootSrc, screenshootFile);
 
             // attachment the screenshot to allure if needed
@@ -42,7 +42,7 @@ public class ScreenShootsManager {
             //Capture screenshot using Takescreenshoot from selenium
             File screenshootSrc = driver.findElement(elemetName).getScreenshotAs(OutputType.FILE);
             // Save screenshot to file
-            File screenshootFile = new File(screenshoot_path + ariName + "-" + TimeManager.GetCurrentTime() + ".png");
+            File screenshootFile = new File(ScreenShoots_PATH + ariName + "-" + TimeManager.GetCurrentTime() + ".png");
             FileUtils.copyFile(screenshootSrc, screenshootFile);
 
 

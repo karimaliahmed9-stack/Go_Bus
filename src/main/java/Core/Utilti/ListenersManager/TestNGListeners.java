@@ -22,8 +22,9 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     public void onExecutionStart() {
 
         CleaningTestOutputDirectory();
-        LogManager.Info("Test Execution Started");
         LogManager.Info("Cleaning directors: ");
+        LogManager.Info("Test Execution Started");
+
         CreatingDirectory();
         LogManager.Info("Creating directors: ...");
         //كدا نا بنادي علي الفايلات من الريسورسز
@@ -86,14 +87,15 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     public static void CleaningTestOutputDirectory() {
         //FileUtil.cleaningDirectory(AllureConstants_Paths.RESULTS_FOLDER.toFile());
         FileUtil.cleaningDirectory(AllureConstants_Paths.REPORT_PATH.toFile());
+        FileUtil.cleaningDirectory(new File(String.valueOf(AllureConstants_Paths.REPORT_PATH.toFile())));
         FileUtil.cleaningDirectory(AllureConstants_Paths.FULL_REPORT_PATH.toFile());
-        FileUtil.cleaningDirectory(new File(ScreenShootsManager.screenshoot_path));
+        FileUtil.cleaningDirectory(new File(ScreenShootsManager.ScreenShoots_PATH));
         FileUtil.cleaningDirectory(new File(ScreenRecordManager.RECORDINGS_PATHE));
-        FileUtil.CleaningWithForce(new File(LogManager.LOG_PATH));
+        //FileUtil.CleaningWithForce(new File(LogManager.LOG_PATH));
     }
 
     public void CreatingDirectory() {
-        FileUtil.CreatingDirectory(ScreenShootsManager.screenshoot_path);
+        FileUtil.CreatingDirectory(ScreenShootsManager.ScreenShoots_PATH);
         FileUtil.CreatingDirectory(ScreenRecordManager.RECORDINGS_PATHE);
     }
 }
